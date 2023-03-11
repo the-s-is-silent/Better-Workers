@@ -1,0 +1,63 @@
+[
+//With the present limitations on uniques and filters in Unciv, the Builder unit from Civ 6 cannot be properly implemented without dividing its job into multiple specialist civilian units. Worse, some improvements (Roads and tile feature removal) currently cannot be implemented as an instant construction ability.
+	{
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"obsoleteTech": "Industrialization",
+		"upgradesTo": "Civil Engineer",
+		"uniques": ["Can build [Land] improvements on tiles"],
+		"cost": 70
+	},
+	{
+		"name": "Agrarian",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 70,
+		"replacementTextForUniques": "Can instantly build Farms, Pastures or Plantations 3 times",
+		"uniques": ["Can instantly construct a [Farm] improvement <[3] times> <after which this unit is consumed>", "Can instantly construct a [Pasture] improvement <[3] times> <after which this unit is consumed>", "Can instantly construct a [Plantation] improvement <[3] times> <after which this unit is consumed>"]
+	},
+	{
+		"name": "Miner",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 70,
+		"requiredTech": "Mining",
+		"replacementTextForUniques": "Can instantly build Mines or Quarries 3 times",
+		"uniques": ["Can instantly construct a [Mine] improvement <[3] times> <after which this unit is consumed>", "Can instantly construct a [Quarry] improvement <[3] times> <after which this unit is consumed>"]
+	},
+	{
+		"name": "Huntsman",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 70,
+		"requiredTech": "Trapping",
+		"replacementTextForUniques": "Can instantly build Trading posts or Camps 3 times",
+		"uniques": ["Can instantly construct a [Trading post] improvement <[3] times> <after which this unit is consumed>", "Can instantly construct a [Camp] improvement <[3] times> <after which this unit is consumed>"]
+	},
+	{
+		"name": "Machinist",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 70,
+		"requiredTech": "Construction",
+		"replacementTextForUniques": "Can instantly build Lumber mills or Oil wells 3 times",
+		"uniques": ["Can instantly construct a [Lumber mill] improvement <[3] times> <after which this unit is consumed>", "Can instantly construct a [Oil well] improvement <[3] times> <after which this unit is consumed>"]
+	},
+	{
+		"name": "Military Engineer",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 100,
+		"requiredTech": "Engineering",
+		"uniques": ["Can build [All Road] improvements on tiles", "[-50]% tile improvement construction time", "Can instantly construct a [Fort] improvement <[3] times> <after which this unit is consumed>", "[+1] Movement <after discovering [Combustion]>", "[+2] Movement <after discovering [Mobile Tactics]>"]
+	},
+	{
+		"name": "Civil Engineer",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 225,
+		"requiredTech": "Industrialization",
+		"uniques": ["Can build [Land] improvements on tiles", "[-33]% tile improvement construction time", "[+1] Movement <after discovering [Combustion]>"]
+	},
+]
