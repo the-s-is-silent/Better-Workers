@@ -15,7 +15,9 @@
 		"movement": 2,
 		"cost": 70,
 		"replacementTextForUniques": "Can instantly build Farms, Pastures or Plantations 3 times",
-		"uniques": ["Can instantly construct a [Farm] improvement <[3] times> <after which this unit is consumed>", "Can instantly construct a [Pasture] improvement <[3] times> <after which this unit is consumed>", "Can instantly construct a [Plantation] improvement <[3] times> <after which this unit is consumed>"]
+		"uniques": ["Can instantly construct a [Farm] improvement <[3] times> <after which this unit is consumed>",
+			"Can instantly construct a [Pasture] improvement <[3] times> <after which this unit is consumed>",
+			"Can instantly construct a [Plantation] improvement <[3] times> <after which this unit is consumed>"]
 	},
 	{
 		"name": "Miner",
@@ -24,7 +26,8 @@
 		"cost": 70,
 		"requiredTech": "Mining",
 		"replacementTextForUniques": "Can instantly build Mines or Quarries 3 times",
-		"uniques": ["Can instantly construct a [Mine] improvement <[3] times> <after which this unit is consumed>", "Can instantly construct a [Quarry] improvement <[3] times> <after which this unit is consumed>"]
+		"uniques": ["Can instantly construct a [Mine] improvement <[3] times> <after which this unit is consumed>",
+			"Can instantly construct a [Quarry] improvement <[3] times> <after which this unit is consumed>"]
 	},
 	{
 		"name": "Huntsman",
@@ -33,7 +36,8 @@
 		"cost": 70,
 		"requiredTech": "Trapping",
 		"replacementTextForUniques": "Can instantly build Trading posts or Camps 3 times",
-		"uniques": ["Can instantly construct a [Trading post] improvement <[3] times> <after which this unit is consumed>", "Can instantly construct a [Camp] improvement <[3] times> <after which this unit is consumed>"]
+		"uniques": ["Can instantly construct a [Trading post] improvement <[3] times> <after which this unit is consumed>",
+			"Can instantly construct a [Camp] improvement <[3] times> <after which this unit is consumed>"]
 	},
 	{
 		"name": "Machinist",
@@ -42,7 +46,8 @@
 		"cost": 70,
 		"requiredTech": "Construction",
 		"replacementTextForUniques": "Can instantly build Lumber mills or Oil wells 3 times",
-		"uniques": ["Can instantly construct a [Lumber mill] improvement <[3] times> <after which this unit is consumed>", "Can instantly construct a [Oil well] improvement <[3] times> <after which this unit is consumed>"]
+		"uniques": ["Can instantly construct a [Lumber mill] improvement <[3] times> <after which this unit is consumed>",
+			"Can instantly construct a [Oil well] improvement <[3] times> <after which this unit is consumed>"]
 	},
 	{
 		"name": "Military Engineer",
@@ -50,7 +55,10 @@
 		"movement": 2,
 		"cost": 100,
 		"requiredTech": "Engineering",
-		"uniques": ["Can build [All Road] improvements on tiles", "[-50]% tile improvement construction time", "Can instantly construct a [Fort] improvement <[3] times> <after which this unit is consumed>", "[+1] Movement <after discovering [Combustion]>", "[+2] Movement <after discovering [Mobile Tactics]>"]
+		"uniques": ["Can build [All Road] improvements on tiles", "[-50]% tile improvement construction time",
+			"Can instantly construct a [Fort] improvement <[3] times> <after which this unit is consumed>",
+			"[+1] Movement <after discovering [Combustion]>", "[+1] Movement <after discovering [Mobile Tactics]>",
+			"Can transform to [Aerodrome]", "Can transform to [Missile Silo]"]
 	},
 	{
 		"name": "Civil Engineer",
@@ -59,5 +67,25 @@
 		"cost": 225,
 		"requiredTech": "Industrialization",
 		"uniques": ["Can build [Land] improvements on tiles", "[-33]% tile improvement construction time", "[+1] Movement <after discovering [Combustion]>"]
+	},
+	{
+		"name": "Aerodrome", //to get around the inability to construct proper airstrips in Unciv
+		"unitType": "Air Base",
+		"movement": 1,
+		"strength": 60,
+		"cost": 4000,
+		"requiredTech": "Radar",
+		"uniques": ["Limited to [5] per Civilization", "Cannot move", "Uncapturable", "Unbuildable", "Cannot be purchased", "Can carry [3] [Aircraft] units",
+			"[+25]% Strength <vs [Air] units> <when defending>", "[-100]% maintenance costs"]
+	},
+	{
+		"name": "Missile Silo", //see above note
+		"unitType": "Air Base",
+		"movement": 1,
+		"strength": 60,
+		"cost": 4000,
+		"requiredTech": "Rocketry",
+		"uniques": ["Limited to [5] per Civilization", "Cannot move", "Uncapturable", "Unbuildable", "Cannot be purchased", "Can carry [3] [Missile] units",
+			"Invisible to non-adjacent units", "[-100]% maintenance costs"]
 	},
 ]
