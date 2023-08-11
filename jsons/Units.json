@@ -1,5 +1,5 @@
 [
-//With the present limitations on uniques and filters in Unciv, the Builder unit from Civ 6 cannot be properly implemented without dividing its job into multiple specialist civilian units. Worse, some improvements (Roads and tile feature removal) currently cannot be implemented as an instant construction ability.
+//With the present limitations on uniques and filters in Unciv, the Builder unit from Civ VI cannot be properly implemented without dividing its job into multiple specialist civilian units.
 	{
 		"name": "Worker",
 		"unitType": "Civilian",
@@ -50,14 +50,28 @@
 			"Can instantly construct a [Oil well] improvement <[3] times> <after which this unit is consumed>"]
 	},
 	{
+		"name": "Renovator",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 70,
+		"requiredTech": "Bronze Working",
+		"replacementTextForUniques": "Can instantly remove Forests, Jungles or Marshes from tiles 3 times",
+		"uniques": ["Can instantly construct a [Remove Forest] improvement <[3] times> <after which this unit is consumed>",
+			"Can instantly construct a [Remove Jungle] improvement <[3] times> <after which this unit is consumed>",
+			"Can instantly construct a [Remove Marsh] improvement <[3] times> <after which this unit is consumed>"]
+	},
+	{
 		"name": "Military Engineer",
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 100,
 		"requiredTech": "Engineering",
-		"uniques": ["Can build [All Road] improvements on tiles", "[-50]% tile improvement construction time",
+		"replacementTextForUniques": "Can instantly build Roads, Railroads or Forts 3 times, or transform into Aerodromes or Missile Silos",
+		"uniques": ["Can instantly construct a [Road] improvement <[3] times> <after which this unit is consumed>",
+			"Can instantly construct a [Railroad] improvement <[3] tiles> <after which this unit is consumed>",
 			"Can instantly construct a [Fort] improvement <[3] times> <after which this unit is consumed>",
-			"[+1] Movement <after discovering [Combustion]>", "[+1] Movement <after discovering [Mobile Tactics]>",
+			"[+1] Movement <after discovering [Combustion]>",
+			"[+1] Movement <after discovering [Mobile Tactics]>",
 			"Can transform to [Aerodrome]", "Can transform to [Missile Silo]"]
 	},
 	{
@@ -66,7 +80,10 @@
 		"movement": 2,
 		"cost": 225,
 		"requiredTech": "Industrialization",
-		"uniques": ["Can build [Land] improvements on tiles", "[-33]% tile improvement construction time", "[+1] Movement <after discovering [Combustion]>"]
+		"uniques": ["Can build [Land] improvements on tiles",
+			"[-33]% tile improvement construction time",
+			"[+1] Movement <after discovering [Combustion]>",
+			"[+1] Movement <after discovering [Mobile Tactics]>"]
 	},
 	{
 		"name": "Aerodrome", //to get around the inability to construct proper airstrips in Unciv
@@ -75,8 +92,10 @@
 		"strength": 60,
 		"cost": 4000,
 		"requiredTech": "Radar",
-		"uniques": ["Limited to [5] per Civilization", "Cannot move", "Uncapturable", "Unbuildable", "Cannot be purchased", "Can carry [3] [Aircraft] units",
-			"[+25]% Strength <vs [Air] units> <when defending>", "[-100]% maintenance costs"]
+		"uniques": ["Limited to [5] per Civilization", "Cannot move", "Uncapturable", "Unbuildable", "Cannot be purchased",
+			"Can carry [3] [Aircraft] units",
+			"[+25]% Strength <vs [Air] units> <when defending>",
+			"[-100]% maintenance costs"]
 	},
 	{
 		"name": "Missile Silo", //see above note
@@ -85,7 +104,9 @@
 		"strength": 60,
 		"cost": 4000,
 		"requiredTech": "Rocketry",
-		"uniques": ["Limited to [5] per Civilization", "Cannot move", "Uncapturable", "Unbuildable", "Cannot be purchased", "Can carry [3] [Missile] units",
-			"Invisible to non-adjacent units", "[-100]% maintenance costs"]
+		"uniques": ["Limited to [5] per Civilization", "Cannot move", "Uncapturable", "Unbuildable", "Cannot be purchased",
+			"Can carry [3] [Missile] units",
+			"Invisible to non-adjacent units",
+			"[-100]% maintenance costs"]
 	},
 ]
