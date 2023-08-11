@@ -68,7 +68,7 @@
 		"requiredTech": "Engineering",
 		"replacementTextForUniques": "Can instantly build Roads, Railroads or Forts 3 times, or transform into Aerodromes or Missile Silos",
 		"uniques": ["Can instantly construct a [Road] improvement <[3] times> <after which this unit is consumed>",
-			"Can instantly construct a [Railroad] improvement <[3] tiles> <after which this unit is consumed>",
+			"Can instantly construct a [Railroad] improvement <[3] times> <after which this unit is consumed>",
 			"Can instantly construct a [Fort] improvement <[3] times> <after which this unit is consumed>",
 			"[+1] Movement <after discovering [Combustion]>",
 			"[+1] Movement <after discovering [Mobile Tactics]>",
