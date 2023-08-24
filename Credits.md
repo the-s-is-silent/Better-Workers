@@ -1,4 +1,4 @@
-All icons present are from The Noun Project and licensed under Creative Commons or Public Domain. Unit sprites will probably recycle the Worker sprites from one of the main sprite sets in Unciv when they're added.
+All icons present are from The Noun Project and licensed under Creative Commons or Public Domain. Civilian unit sprites reuse sprites from the FantasyHex tileset in Unciv (Archer for pre-Renaissance Huntsman, Minuteman for Renaissance and later Huntsman, Worker for the others). Still missing sprites for the Air Base units and an icon for the Renovator unit (this one will be a pain to find something appropriate for).
 
 Unit Icons
 - [Aerodrome](https://thenounproject.com/icon/aerodrome-4431755/) by Vector Portal

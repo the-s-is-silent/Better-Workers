@@ -66,13 +66,14 @@
 		"movement": 2,
 		"cost": 100,
 		"requiredTech": "Engineering",
-		"replacementTextForUniques": "Can instantly build Roads, Railroads or Forts 3 times, or transform into Aerodromes or Missile Silos",
+		"replacementTextForUniques": "Can instantly build Roads, Railroads or Forts 3 times, or transform into Aerodromes or Missile Silos with the appropriate technology researched",
 		"uniques": ["Can instantly construct a [Road] improvement <[3] times> <after which this unit is consumed>",
 			"Can instantly construct a [Railroad] improvement <[3] times> <after which this unit is consumed>",
 			"Can instantly construct a [Fort] improvement <[3] times> <after which this unit is consumed>",
 			"[+1] Movement <after discovering [Combustion]>",
 			"[+1] Movement <after discovering [Mobile Tactics]>",
-			"Can transform to [Aerodrome]", "Can transform to [Missile Silo]"]
+			"Can transform to [Aerodrome] <after discovering [Radar]>",
+			"Can transform to [Missile Silo] <after discovering [Rocketry]>"]
 	},
 	{
 		"name": "Civil Engineer",
@@ -92,7 +93,8 @@
 		"strength": 60,
 		"cost": 4000,
 		"requiredTech": "Radar",
-		"uniques": ["Limited to [5] per Civilization", "Cannot move", "Uncapturable", "Unbuildable", "Cannot be purchased",
+		"uniques": ["Limited to [5] per Civilization",
+			"Cannot move", "Uncapturable", "Unbuildable", "Cannot be purchased",
 			"Can carry [3] [Aircraft] units",
 			"[+25]% Strength <vs [Air] units> <when defending>",
 			"[-100]% maintenance costs"]
@@ -104,9 +106,10 @@
 		"strength": 60,
 		"cost": 4000,
 		"requiredTech": "Rocketry",
-		"uniques": ["Limited to [5] per Civilization", "Cannot move", "Uncapturable", "Unbuildable", "Cannot be purchased",
+		"uniques": ["Limited to [5] per Civilization",
+			"Cannot move", "Uncapturable", "Unbuildable", "Cannot be purchased",
 			"Can carry [3] [Missile] units",
 			"Invisible to non-adjacent units",
 			"[-100]% maintenance costs"]
-	},
+	}
 ]

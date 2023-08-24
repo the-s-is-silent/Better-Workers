@@ -3,7 +3,9 @@
 		"name": "Public Works Administration",
 		"cost": 125,
 		"isNationalWonder": true,
-		"uniques": ["Can only be built [in capital]", "[+25]% Production when constructing [Civilian] units [in all cities]", "Cost increases by [30] per owned city"],
+		"uniques": ["Can only be built [in capital]",
+			"[+25]% Production when constructing [Civilian] units [in all cities]",
+			"Cost increases by [30] per owned city"],
 		"requiredTech": "Engineering"
-	},
+	}
 ]
